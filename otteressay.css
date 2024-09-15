@@ -1,0 +1,40 @@
+body {
+    background-color: #202020; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  .container {
+    width: 80%; 
+    max-width: 600px; 
+    position: relative;
+  }
+
+  h1 {
+    background-color: #ff0095; 
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    font-size: 2em;
+    font-family: Tahoma;
+}
+
+  p {
+    background-color: white; 
+    padding: 0 15% 0 15%;
+    padding-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: -60px; 
+    font-size: 1.2em;
+    font-family: Segoe UI;
+    min-height: 150px;
+}
