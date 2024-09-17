@@ -1,0 +1,38 @@
+body {
+    margin: 96px;
+    font: Lato;
+    background-color: white;
+}
+
+.first-header {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 48px;
+    height: 38px;
+    width: 180px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 415px;
+}
+
+.green {
+    color: #009966;
+    font-weight: 800;
+}
+
+.main {
+    background-color: #666666;
+}
+
+.second-header {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28.8px;
+}
