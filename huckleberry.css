@@ -1,7 +1,6 @@
-
 .body {
     margin-left: 264px;
-    font: Lato;
+    font-family: Lato;
     background-color: white;
     height: 382px;
     margin-bottom: 32px;
@@ -30,55 +29,3 @@ p {
     color: #009966;
     font-weight: 800;
 }
-
-.main {
-    background-color: #666666; 
-    padding: 20px;  
-    height: 450px;
-    top: 382px;           
-}
-
-.box {
-    background-color: white;
-    padding: 24px;
-    width: 800px;
-    height: 312px;
-    top: 454px;
-    left: 240px;
-    margin-top: 72px;
-    margin-left: 240px;
-    border: 0px 0px 8px 0px;
-}
-
-.box p {
-    font: Lato;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 92px;
-}
-.box p:first-of-type {
-    width: 752px;
-    height: 120px;
-    top: 546px;
-    left: 264px;
-}
-
-.box p:last-of-type {
-    width: 752px;
-    height: 60px;
-    top: 682px;
-    left: 264px;
-    margin: 16px 24px 24px 24px;
-}
-
-.second-header {
-    color: white;  /* Text color for the header */
-    margin-top: 0; /* Reset top margin to avoid extra space */
-}
-
-
-
-
