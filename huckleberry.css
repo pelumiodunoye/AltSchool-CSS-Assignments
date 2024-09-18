@@ -1,6 +1,13 @@
+body, html {
+    overflow: hidden;
+}
+
+body {
+    font-family: Lato;
+}
+
 .body {
     margin-left: 264px;
-    font-family: Lato;
     background-color: white;
     height: 382px;
     margin-bottom: 32px;
@@ -25,7 +32,56 @@ p {
     width: 415px;
 }
 
+.body p:last-of-type {
+    margin-bottom: 0px;
+}
+
 .green {
     color: #009966;
     font-weight: 800;
+}
+
+.main {
+    background: #666666;
+    box-shadow: 0px -8px 0px rgba(153, 153, 153, 10);
+    padding-left: 240px;
+    height: 450px;
+}
+
+.offsetbox {
+    background-color: #ffbf00;
+    box-shadow: 0px 8px 0px #cc9900;
+    width: 398px;
+    height: 60px;
+    align-items: justify;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    position: relative;
+    top: 72px;
+    left: -8px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 8px 0px rgba(153, 153, 153, 10);
+    width: 800px;
+    height: 312px;
+    top: 72px;
+    left: 240px;
+    bottom: 66px;
+}
+
+.card p:first-of-type {
+    width: 752px;
+    height: 120px;
+    padding-left: 24px;
+    padding-top: 92px;
+    top: 24px;
+}
+
+.card p:last-of-type {
+    width: 752px;
+    height: 120px;
+    padding-left: 24px;
 }
