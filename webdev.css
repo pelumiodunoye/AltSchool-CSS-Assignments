@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Brown";
+  src: url("./Assets/fonts/BrownHeavy\ Regular.ttf") format("ttf");
+}
+
+body {
+  background: #fefefe;
+  margin-left: 140px;
+}
+
+.hero-section {
+    width: 450px;
+    height: 275px;
+    margin-top: 205px;
+}
+
+.hero-section h2 {
+  font-family: "Brown", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.8px;
+  color: #000b0a;
+  width: fit-content;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-family: "Brown", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #737373;
+  width: 460px;
+  height: 75px;
+}
