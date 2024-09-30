@@ -1,0 +1,28 @@
+form {
+    margin: 40px;
+    display: flex;
+    flex-direction: column; /* Stack all input groups vertically */
+}
+
+.name-group {
+    display: flex; /* Use flex to arrange name fields side by side */
+    gap: 30px; /* Add space between the first name and last name fields */
+}
+
+.input-group {
+    margin-bottom: 30px; /* Add margin to create space between input groups */
+}
+
+input, select {
+    width: 100%; /* Make inputs take full width of their container */
+    height: 48px; /* Maintain the height */
+    border: 1px solid #f0f0f0; /* Default border */
+    border-radius: 2px; /* Same border radius */
+    padding: 8px; /* Padding for aesthetics */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+input:focus, select:focus {
+    outline: none; /* Remove the default outline */
+    border: 3px solid rgba(46, 196, 182, 0.06); /* Your custom focus border */
+}

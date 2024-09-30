@@ -22,6 +22,7 @@ body {
   background-color: hsla(174, 62%, 47%, 0.04);
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
 }
 
 .hero-section {
@@ -65,49 +66,98 @@ img {
   margin-top: 81px;
   border-radius: 6px;
   width: 580px;
-  height: 679px; /*remove if content determines height*/
   box-shadow: 0px 4px 50px 0px #0408131a;
-  /* margin: 40px; */
 }
 
 form {
   margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.name {
+.name-group,
+.gender-dob-group,
+.weight-height {
   display: flex;
   gap: 24px;
 }
 
-.input-group {
+.input-group,
+.act-lev,
+.password {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
 }
 
 label {
-  margin-bottom: 8px;
+  width: 159px;
+  height: 14px;
   font-family: "Sofia Pro", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.1px;
   color: #011c34;
-  width: 159px;
 }
 
-.first-name {
+input,
+select {
+  width: 100%;
   width: 238px;
   height: 48px;
-  border: 3px solid #2ec4b6;
+  border: 1px solid #f0f0f0;
   border-radius: 2px;
+  padding: 14px 10px 14px 16px;
+  box-sizing: border-box;
 }
 
-input {
-  width: 238px;
+.act-lev select,
+.password input {
+  width: 500px;
   height: 48px;
   border: 1px solid #f0f0f0;
   border-radius: 2px;
 }
 
-input:focus {
-  border: 3px #2ec4b6;
+input:focus,
+select:focus {
+  outline: none;
+  border: 3px solid rgba(46, 196, 182, 0.9);
+}
+
+button {
+  width: 500px;
+  height: 48px;
+  background-color: #2ec4b6;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 10px 40px 0px #0000001a;
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.tnc{
+  margin-top: 16px;
+  font-family: "SofiaPro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+span {
+  text-decoration: underline;
+  color: #2ec4b6;
+  font-family: "SofiaPro";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
 }
