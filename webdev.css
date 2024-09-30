@@ -18,6 +18,11 @@
   src: url("./Assets/fonts/Sofia\ Pro\ Regular\ Az.woff");
 }
 
+@font-face {
+  font-family: "Sofia-Pro";
+  src: url("./Assets/fonts/Sofia\ Pro\ UltraLight\ Az.woff");
+}
+
 body {
   background-color: hsla(174, 62%, 47%, 0.04);
   display: flex;
@@ -126,6 +131,15 @@ input:focus,
 select:focus {
   outline: none;
   border: 3px solid rgba(46, 196, 182, 0.9);
+}
+
+input::placeholder,
+select::placeholder {
+  font-family: "Sofia-Pro", sans-serif;
+  font-weight: 100; 
+  line-height: 20px;
+  color: #011c34; 
+  letter-spacing: 0.2px;
 }
 
 button {
