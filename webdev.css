@@ -41,6 +41,9 @@ body {
 img {
   display: block;
   margin-bottom: 50px;
+  width: 77.3px;
+  height: 80px;
+
 }
 
 .hero-section h2 {
@@ -180,77 +183,22 @@ span {
   line-height: 25px;
 }
 
-@media only screen and (max-width: 375px) {
-  .hero-section {
-    width: 327px;
-    height: 275px;
-    margin-top: 74px;
-    margin-left: 24px;
-    margin-right: 120px;
-  }
-  
-  img {
-    display: block;
-    margin-bottom: 50px;
-  }
-  
-  .hero-section h2 {
-    font-family: "Brown", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: -0.8px;
-    color: #000b0a;
-    width: fit-content;
-    height: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
 
-  .desktop-text {
-    display: none;
-  }
+
+@media only screen and (max-width: 375px) {
+
+.desktop-text {
+  display: none;
+}
+   
+}
+/*
+ 
   
-  .hero-section  {
-    font-family: "BrownHeavy", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    color: #737373;
-    width: 460px;
-    height: 75px;
-  }
   
-  .form-section {
-    background-color: white;
-    margin-top: 81px;
-    border-radius: 6px;
-    width: 580px;
-    box-shadow: 0px 4px 50px 0px #0408131a;
-  }
   
-  form {
-    margin: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   
-  .name-group,
-  .gender-dob-group,
-  .weight-height {
-    display: flex;
-    gap: 24px;
-  }
   
-  .input-group,
-  .act-lev,
-  .password {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 30px;
-  }
   
   label {
     width: 159px;
@@ -329,5 +277,5 @@ span {
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
-  }
-}
+  }*/
+} 
