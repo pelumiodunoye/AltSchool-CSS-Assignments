@@ -43,7 +43,6 @@ img {
   margin-bottom: 50px;
   width: 77.3px;
   height: 80px;
-
 }
 
 .hero-section h2 {
@@ -143,9 +142,9 @@ select:focus {
 input::placeholder,
 select::placeholder {
   font-family: "Sofia-Pro", sans-serif;
-  font-weight: 100; 
+  font-weight: 100;
   line-height: 20px;
-  color: #011c34; 
+  color: #011c34;
   letter-spacing: 0.2px;
 }
 
@@ -165,7 +164,7 @@ button {
   box-sizing: border-box;
 }
 
-.tnc{
+.tnc {
   margin-top: 16px;
   font-family: "SofiaPro";
   font-weight: 400;
@@ -183,25 +182,95 @@ span {
   line-height: 25px;
 }
 
+@media only screen and (max-width: 430px) {
+  body {
+    background-color: hsla(174, 62%, 47%, 0.04);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
+  .hero-section {
+    width: 100%;
+    max-width: 327px;
+    margin: 74px 24px 0 24px;
+    box-sizing: border-box;
+    height: auto;
+  }
 
-@media only screen and (max-width: 375px) {
+  img {
+    display: block;
+    width: 38.67px;
+    height: 40px;
+    margin-bottom: 40px;
+  }
 
-.desktop-text {
-  display: none;
-}
-   
-}
-/*
- 
-  
-  
-  
-  
-  
-  
+  .hero-section h2 {
+    width: 100%;
+    width: 327px;
+    height: 50px;
+    font-family: "Brown", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 29.4px;
+    letter-spacing: -0.8px;
+    color: #000b0a;
+    margin-bottom: 12px;
+  }
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: contents;
+    width: 327px;
+    height: 50px;
+    font-family: "Brown", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #737373;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+  }
+
+  .form-section {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 6px;
+    width: 327px;
+    box-shadow: 0px 4px 50px 0px #0408131a;
+    margin-left: 24px;
+  }
+
+  form {
+    margin: 24px 16px 30px 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .name-group,
+  .gender-dob-group,
+  .weight-height {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .input-group,
+  .act-lev,
+  .password {
+    width: 100%;
+    max-width: ;
+    width: 295px;
+    height: 72px;
+    gap: 8px;
+    /* margin-bottom: 24px; */
+  }
+
   label {
-    width: 159px;
+    width: 197px;
     height: 14px;
     font-family: "Sofia Pro", sans-serif;
     font-weight: 600;
@@ -210,43 +279,43 @@ span {
     letter-spacing: 0.1px;
     color: #011c34;
   }
-  
+
   input,
   select {
     width: 100%;
-    width: 238px;
+    width: 295px;
     height: 48px;
     border: 1px solid #f0f0f0;
     border-radius: 2px;
     padding: 14px 10px 14px 16px;
     box-sizing: border-box;
   }
-  
+
   .act-lev select,
   .password input {
-    width: 500px;
+    width: 295px;
     height: 48px;
     border: 1px solid #f0f0f0;
     border-radius: 2px;
   }
-  
+
   input:focus,
   select:focus {
     outline: none;
     border: 3px solid rgba(46, 196, 182, 0.9);
   }
-  
+
   input::placeholder,
   select::placeholder {
     font-family: "Sofia-Pro", sans-serif;
-    font-weight: 100; 
+    font-weight: 100;
     line-height: 20px;
-    color: #011c34; 
+    color: #011c34;
     letter-spacing: 0.2px;
   }
-  
+
   button {
-    width: 500px;
+    width: 295px;
     height: 48px;
     background-color: #2ec4b6;
     border: none;
@@ -260,16 +329,18 @@ span {
     color: white;
     box-sizing: border-box;
   }
-  
-  .tnc{
+
+  .tnc {
+    width: 316px;
+    height: 50px;
     margin-top: 16px;
     font-family: "SofiaPro";
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
-    margin-bottom: 0;
+    margin-bottom: ;
   }
-  
+
   span {
     text-decoration: underline;
     color: #2ec4b6;
@@ -277,5 +348,5 @@ span {
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
-  }*/
-} 
+  }
+}
