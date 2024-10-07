@@ -58,10 +58,10 @@ img {
   margin-bottom: 20px;
 }
 
-.mobile-text, footer {
+.mobile-text,
+footer {
   display: none;
 }
-
 
 .hero-section p {
   font-family: "BrownHeavy", sans-serif;
@@ -219,7 +219,8 @@ span {
     color: #000b0a;
     margin-bottom: 12px;
   }
-  .desktop-text, #desktop-text {
+  .desktop-text,
+  #desktop-text {
     display: none;
   }
 
@@ -335,7 +336,12 @@ span {
     box-sizing: border-box;
   }
 
-  .footer {
+  footer {
+    display: block;
+    margin-bottom: 64px;
+  }
+
+  footer p {
     width: 316px;
     height: 50px;
     margin-top: 16px;
@@ -344,7 +350,8 @@ span {
     font-size: 14px;
     line-height: 25px;
     text-align: center;
-    margin: 24px 30px 64px 30px;
+    margin: 24px 30px 0;
+    box-sizing: border-box;
   }
 
   span {
