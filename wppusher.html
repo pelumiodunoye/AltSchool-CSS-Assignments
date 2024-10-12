@@ -24,6 +24,78 @@
         </ul>
       </nav>
     </header>
-    <hr>
+    <hr />
+
+    <div class="panel">
+      <div class="checkout-info">
+        <h2 class="header-text">Checkout</h2>
+        <hr class="header-line" />
+        <div class="basic-section">
+          <div class="text-with-oval">
+            <span class="oval">1</span>
+            <span class="span-text">Your Basic Information</span>
+          </div>
+          <div class="name-group">
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Jane" />
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="janedoe@example.com" />
+          </div>
+        </div>
+
+        <hr class="header-line1" />
+        <div class="payment-information">
+          <div class="text-with-oval">
+            <span class="oval">2</span>
+            <span class="span-text">Your Payment Information</span>
+          </div>
+          <div class="payment-section">
+            <label for="card-details">Credit Card</label>
+            <div class="card-input-wrapper">
+              <input
+                type="text"
+                id="card-number"
+                placeholder="Card Number"
+                maxlength="16"
+              />
+              <input
+                type="text"
+                id="card-expiry"
+                placeholder="MM/YY"
+                maxlength="5"
+              />
+              <input
+                type="text"
+                id="card-cvc"
+                placeholder="CVC"
+                maxlength="3"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="header-line1" />
+        <div class="cta-section">
+          <button>Buy WP Pusher</button>
+          <div class="text-with-oval">
+            <span class="oval1">?</span>
+            <span class="span-text1"> <strong>Need any help?</strong> Don't hesitate to contact <br> support!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right smaller box -->
+      <div class="right-box">
+        <!-- Additional content can go here -->
+        <p>Additional Box Content</p>
+      </div>
+    </div>
   </body>
 </html>
