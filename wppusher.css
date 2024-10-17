@@ -2,13 +2,20 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f8fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* align-items: center; */
 }
 
 header {
-  margin: 28px 40px 0;
+  margin: 0 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header img {
@@ -67,7 +74,7 @@ nav ul li button {
 }
 
 hr {
-  margin: 31px 40px 85px;
+  margin: 31px 40px 5px;
   height: 2px;
   border: none;
   background-color: #e0e6ea;
@@ -75,22 +82,21 @@ hr {
 }
 
 .panel {
-  position: absolute;
-  /* top: 85px; */
-  left: 262px;
+  margin-left: auto;
+  margin-right: auto;
   width: 892px;
   height: 795px;
   background-color: #ffffff;
   border-radius: 6px 0 0 0;
   box-shadow: 0px 5px 15px 0px #0000000d, 0px 15px 35px 0px #2b404e18;
   display: flex;
-  justify-content: space-between; /* Distribute space between the two boxes */
+  justify-content: space-between;
 }
 
 .checkout-info {
   width: calc(100% - 312px); /* Full width minus the width of the right box */
   padding: 0;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .right-box {
@@ -110,6 +116,7 @@ hr {
   text-align: left;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-left: 48px;
+  margin-top: 41px;
 }
 
 .header-line {
@@ -284,14 +291,15 @@ input::placeholder {
 
 .cta-section {
   width: 483px;
-  height: 146.1px;
-  margin-left: 48px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
-  margin-left: 0;
-  padding-left: 0;
+  padding: 0;
+  margin-bottom: 46px;
 }
 
-button {
+.purchase-btn {
   width: 100%;
   height: 52px;
   align-items: center;
@@ -307,48 +315,42 @@ button {
   margin-bottom: 23px;
 }
 
-/* .oval1 {
+.help {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 14px;
-  border: 2px solid #548bc5;
-  border-radius: 100%;
-  font-family: lato;
-  font-size: 11px;
-  font-weight: 700;
-  color: #548bc5;
+  width: fit-content;
+  gap: 10px;
+  margin-left: 75px; 
+  margin-bottom: 31px;
 }
-
-.span-text1 {
-  font-family: lato;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21.6px;
-  letter-spacing: -0.16px;
-} */
 
 .oval1 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20px;
-  height: 14px;
+  height: 20px;
   border: 2px solid #548bc5;
   border-radius: 100%;
   font-family: lato;
   font-size: 11px;
   font-weight: 700;
   color: #548bc5;
-  gap: 10px; /* Adds spacing between oval and text */
 }
 
-.span-text1 {
+p {
+  width: 303px;
   font-family: lato;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21.6px;
-  letter-spacing: -0.16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: -0.01px;
   margin: 0;
+  color: #1d2c3c;
+} 
+
+.cta-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
