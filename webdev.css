@@ -79,6 +79,8 @@ footer {
   border-radius: 6px;
   width: 580px;
   box-shadow: 0px 4px 50px 0px #0408131a;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
@@ -183,78 +185,68 @@ span {
   line-height: 25px;
 }
 
-@media only screen and (max-width: 375px) {
+/* Mobile Styles */
+@media (min-width:320px) and (max-width: 1024px) {
   body {
     background-color: hsla(174, 62%, 47%, 0.04);
+    margin: 0 24px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    overflow-x: hidden;
   }
-
   .hero-section {
+    margin: 0 auto;
+    padding: 0;
     width: 100%;
-    max-width: 327px;
-    margin: 74px 24px 0 24px;
+    max-height: fit-content;
     box-sizing: border-box;
-    height: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   img {
-    display: block;
-    width: 38.67px;
-    height: 40px;
+    margin-top: 50px;
     margin-bottom: 40px;
+    width: 38.67px;
+    height: 38.58px;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .hero-section h2 {
-    width: 100%;
-    width: 327px;
-    height: 50px;
-    font-family: "Brown", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 29.4px;
-    letter-spacing: -0.8px;
-    color: #000b0a;
-    margin-bottom: 12px;
-  }
-  .desktop-text,
-  #desktop-text {
+  .desktop-text {
     display: none;
   }
-
-  .mobile-text p {
-    display: contents;
-    width: 327px;
-    height: 50px;
-    font-family: "Brown", sans-serif;
+  .mobile-text {
+    display: inline-block;
+    font-family: "BrownHeavy", sans-serif;
     font-weight: 300;
     font-size: 16px;
+    line-height: 25px;
     color: #737373;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 25px;
-  }
-
-  .mobile-text {
-    display: contents;
+    width: fit-content;
+    max-height: 50px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
   }
 
   .form-section {
-    margin-top: 40px;
     background-color: white;
+    margin-top: 40px;
     border-radius: 6px;
-    width: 327px;
+    width: 100%;
     box-shadow: 0px 4px 50px 0px #0408131a;
-    margin-left: 24px;
   }
 
   form {
-    margin: 24px 16px 30px 16px;
+    margin: 20px 16px 30px 16px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 
   .name-group,
@@ -262,21 +254,23 @@ span {
   .weight-height {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 4px;
+    width: 100%;
   }
 
   .input-group,
   .act-lev,
   .password {
-    width: 100%;
-    max-width: 295px;
-    width: 295px;
-    height: 72px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
     gap: 8px;
+    margin-bottom: 24px;
+    width: 100%;
   }
 
   label {
-    width: 197px;
+    width: 100%;
     height: 14px;
     font-family: "Sofia Pro", sans-serif;
     font-weight: 600;
@@ -289,17 +283,15 @@ span {
   input,
   select {
     width: 100%;
-    width: 295px;
     height: 48px;
     border: 1px solid #f0f0f0;
     border-radius: 2px;
     padding: 14px 10px 14px 16px;
-    box-sizing: border-box;
   }
 
   .act-lev select,
   .password input {
-    width: 295px;
+    width: 100%;
     height: 48px;
     border: 1px solid #f0f0f0;
     border-radius: 2px;
@@ -321,7 +313,7 @@ span {
   }
 
   button {
-    width: 295px;
+    width: 100%;
     height: 48px;
     background-color: #2ec4b6;
     border: none;
@@ -336,22 +328,21 @@ span {
     box-sizing: border-box;
   }
 
-  footer {
-    display: block;
-    margin-bottom: 64px;
+  .desktop-text {
+    display: none;
   }
 
-  footer p {
-    width: 316px;
-    height: 50px;
-    margin-top: 16px;
+  footer {
+    display: block;
     font-family: "SofiaPro";
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
     text-align: center;
-    margin: 24px 30px 0;
-    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 64px;
+    /* width: 316px; */
+    height: 50px;
   }
 
   span {
@@ -361,5 +352,42 @@ span {
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
+  }
+}
+
+@media (min-width:769px) {
+
+  .hero-section h2 {
+    font-family: "Brown", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+    color: #000b0a;
+    width: fit-content;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .desktop-text {
+    display: block;
+  }
+  .mobile-text,
+  footer {
+    display: none;
+  }
+  
+  .hero-section p {
+    font-family: "BrownHeavy", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #737373;
+    width: 460px;
+    height: 75px;
+  }
+
+  .form-section {
+    margin-bottom: 64px;
   }
 }

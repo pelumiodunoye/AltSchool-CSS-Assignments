@@ -1,39 +1,27 @@
 body, html {
-    overflow: hidden;
-}
-
-body {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .body {
-    margin-left: 264px;
     background-color: white;
-    height: 382px;
-    margin-bottom: 32px;
+    padding: 24px;
 }
 
 .first-header {
     font-weight: 800;
     font-size: 32px;
     line-height: 38.4px;
-    margin-top: 96px;
-    margin-bottom: 48px;
-    height: 38px;
-    width: 180px;
+    margin-top: 48px;
 }
 
 .body p {
-    margin-top: 0;
-    margin-bottom: 16px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    width: 415px;
-}
-
-.body p:last-of-type {
-    margin-bottom: 0px;
+    margin: 0 0 16px 0;
 }
 
 .green {
@@ -43,284 +31,98 @@ body {
 
 .main {
     background: #666666;
-    box-shadow: 0px -8px 0px rgba(153, 153, 153, 10);
-    padding-left: 240px;
-    height: 450px;
+    box-shadow: 0px -8px 0px rgba(153, 153, 153, 0.1);
+    padding: 24px;
 }
 
 .offsetbox {
     background-color: #ffbf00;
     box-shadow: 0px 8px 0px #cc9900;
-    width: 398px;
+    width: 100%;
     height: 60px;
-    align-items: justify;
     display: flex;
     align-items: center;
     padding-left: 32px;
-    position: relative;
-    top: 88px;
-    left: -8px;
+    margin-top: 24px;
 }
 
 .offsetbox h2 {
     font-weight: 800;
     font-size: 24px;
     line-height: 28.8px;
-    width: 334px;
-    height: 29px;
 }
 
 .card {
     background-color: white;
-    box-shadow: 0px 8px 0px rgba(153, 153, 153, 10);
-    width: 800px;
-    height: 312px;
-    left: 240px;
-    bottom: 66px;
+    box-shadow: 0px 8px 0px rgba(153, 153, 153, 0.1);
+    padding: 24px;
+    margin-top: 24px;
 }
 
 .card p {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0;
 }
 
-.card p:first-of-type {
-    width: 752px;
-    height: 120px;
-    padding-left: 24px;
-    padding-top: 92px;
-    top: 24px;
-}
-
-.card p:last-of-type {
-    width: 752px;
-    height: 60px;
-    padding-left: 24px;
-}
-
-
-/* Media query for tablets */
-@media only screen and (max-width: 768px) and (min-width: 390px) {
-    body, html {
-        height: 1024px;
-    }
-    
-    body {
-        font-family: Lato;
-    }
-    
+/* Tablet styles */
+@media (max-width: 768px) {
     .body {
         margin-left: 24px;
-        background-color: white;
-        height: 382px;
-        margin-bottom: 32px;
+        margin-right: 24px;
     }
-    
+
     .first-header {
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 38.4px;
-        margin-top: 96px;
-        margin-bottom: 48px;
-        height: 38px;
-        width: 180px;
+        font-size: 28px;
+        width: auto;
     }
-    
+
     .body p {
-        margin-top: 0;
-        margin-bottom: 16px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
     }
 
-    .body p:first-of-type {
-        width: 401px;
-        height: 60px;
-        letter-spacing: -0.5%;
-    }
-    
-    .body p:last-of-type {
-        margin-bottom: 0px;
-        width: 405px;
-        height: 60px;
-    }
-    
-    .green {
-        color: #009966;
-        font-weight: 800;
-    }
-    
     .main {
-        background: #666666;
-        box-shadow: 0px -8px 0px rgba(153, 153, 153, 10);
-        padding-left: 0px;
-        height: 450px;
-    }
-    
-    .offsetbox {
-        background-color: #ffbf00;
-        box-shadow: 0px 8px 0px #cc9900;
-        width: 398px;
-        height: 60px;
-        align-items: justify;
-        display: flex;
-        align-items: center;
-        padding-left: 32px;
-        position: relative;
-        top: 88px;
-        left: -8px;
-    }
-    
-    .offsetbox h2 {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 28.8px;
-        width: 334px;
-        height: 29px;
-    }
-    
-    .card {
-        background-color: white;
-        box-shadow: 0px 8px 0px rgba(153, 153, 153, 10);
-        width: 800px;
-        height: 312px;
-        /* top: 72px; */
-        left: 240px;
-        bottom: 66px;
-    }
-    
-    .card p {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .card p:first-of-type {
-        width: 720px;
-        height: 120px;
-        padding-left: 24px;
-        padding-top: 92px;
-        top: 24px;
-    }
-    
-    .card p:last-of-type {
-        width: 720px;
-        height: 60px;
-        padding-left: 24px;
+        padding: 16px;
     }
 
+    .offsetbox h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
 }
-/* Media query for mobile  */
-@media only screen and (max-width: 390px) and (min-width: 130px) {
-    body, html {
-        height: 1024px;
-    }
-    
-    body {
-        font-family: Lato;
-    }
-    
+
+/* Mobile styles */
+@media (max-width: 390px) {
     .body {
-        margin-left: 24px;
-        background-color: white;
-        height: 382px;
-        margin-bottom: 32px;
+        padding: 16px;
     }
-    
+
     .first-header {
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 38.4px;
-        margin-top: 96px;
-        margin-bottom: 48px;
-        height: 38px;
-        width: 180px;
-    }
-    
-    .body p {
-        margin-top: 0;
-        margin-bottom: 16px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .body p:first-of-type {
-        width: 342px;
-        height: 60px;
-        letter-spacing: -0.5%;
-    }
-    
-    .body p:last-of-type {
-        margin-bottom: 0px;
-        width: 342px;
-        height: 60px;
-    }
-    
-    .green {
-        color: #009966;
-        font-weight: 800;
-    }
-    
-    .main {
-        background: #666666;
-        box-shadow: 0px -8px 0px rgba(153, 153, 153, 10);
-        padding-left: 0px;
-        height: 450px;
-    }
-    
-    .offsetbox {
-        background-color: #ffbf00;
-        box-shadow: 0px 8px 0px #cc9900;
-        width: 398px;
-        height: 60px;
-        align-items: justify;
-        display: flex;
-        align-items: center;
-        padding-left: 32px;
-        position: relative;
-        top: 88px;
-        left: -8px;
-    }
-    
-    .offsetbox h2 {
-        font-weight: 800;
         font-size: 24px;
-        line-height: 28.8px;
-        width: 334px;
-        height: 29px;
-    }
-    
-    .card {
-        background-color: white;
-        box-shadow: 0px 8px 0px rgba(153, 153, 153, 10);
-        width: 800px;
-        height: 312px;
-        /* top: 72px; */
-        left: 240px;
-        bottom: 66px;
-    }
-    
-    .card p {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .card p:first-of-type {
-        width: 342px;
-        height: 240px;
-        padding-left: 24px;
-        padding-top: 92px;
-        top: 24px;
-    }
-    
-    .card p:last-of-type {
-        width: 343px;
-        height: 120px;
-        padding-left: 24px;
+        margin-top: 32px;
     }
 
+    .body p {
+        font-size: 16px;
+    }
+
+    .main {
+        padding: 12px;
+    }
+
+    .offsetbox h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
 }

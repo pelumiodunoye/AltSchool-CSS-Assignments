@@ -26,86 +26,138 @@
     </header>
     <hr />
     <div class="panel">
-      <div class="checkout-info">
-        <h2 class="header-text">Checkout</h2>
-        <hr class="header-line" />
-        <div class="basic-section">
-          <div class="text-with-oval">
-            <span class="oval">1</span>
-            <span class="span-text">Your Basic Information</span>
-          </div>
-          <div class="name-group">
-            <div class="input-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" placeholder="Jane" />
+      <div class="main-content">
+        <div class="checkout-info">
+          <h2 class="header-text">Checkout</h2>
+          <hr class="header-line" />
+          <div class="basic-section">
+            <div class="text-with-oval">
+              <span class="oval">1</span>
+              <span class="span-text">Your Basic Information</span>
             </div>
-            <div class="input-group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" placeholder="Doe" />
+            <div class="name-group">
+              <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Jane" />
+              </div>
+              <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="email">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="janedoe@example.com" />
             </div>
           </div>
-          <div class="email">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="janedoe@example.com" />
+  
+          <hr class="header-line1" />
+          <div class="payment-information">
+            <div class="text-with-oval">
+              <span class="oval">2</span>
+              <span class="span-text">Your Payment Information</span>
+            </div>
+            <div class="payment-section">
+              <label for="card-details">Credit Card</label>
+              <div class="card-input-wrapper">
+                <input
+                  type="text"
+                  id="card-number"
+                  placeholder="Card Number"
+                  maxlength="16"
+                />
+                <input
+                  type="text"
+                  id="card-expiry"
+                  placeholder="MM/YY"
+                  maxlength="5"
+                />
+                <input
+                  type="text"
+                  id="card-cvc"
+                  placeholder="CVC"
+                  maxlength="3"
+                />
+              </div>
+            </div>
+          </div>
+          <hr class="header-line1" />
+          <div class="cta-section">
+            <button class="purchase-btn">Buy WP Pusher</button>
+            <div class="help">
+              <div>
+                <span class="oval1">?</span>
+              </div>
+              <p>
+                <strong>Need any help?</strong> Don't hesitate to contact
+                <br />support!
+              </p>
+            </div>
+            <img
+              src="./Assets/powered_by_stripe.png"
+              alt="stripe-button"
+              width="92px"
+              height="20.1px"
+            />
           </div>
         </div>
-
-        <hr class="header-line1" />
-        <div class="payment-information">
-          <div class="text-with-oval">
-            <span class="oval">2</span>
-            <span class="span-text">Your Payment Information</span>
-          </div>
-          <div class="payment-section">
-            <label for="card-details">Credit Card</label>
-            <div class="card-input-wrapper">
-              <input
-                type="text"
-                id="card-number"
-                placeholder="Card Number"
-                maxlength="16"
-              />
-              <input
-                type="text"
-                id="card-expiry"
-                placeholder="MM/YY"
-                maxlength="5"
-              />
-              <input
-                type="text"
-                id="card-cvc"
-                placeholder="CVC"
-                maxlength="3"
-              />
+  
+        <!-- Right smaller box -->
+        <div class="sidebar">
+          <div class="sidebar-content">
+            <div class="plan">
+              <h4>Freelancer</h4>
+              <p class="price-tag"><sup>$ </sup>99<span>/ year</span></p>
+              <p class="tagline">
+                Automatically renews <br />
+                after 1 year
+              </p>
             </div>
-          </div>
-        </div>
-        <hr class="header-line1" />
-        <div class="cta-section">
-          <button class="purchase-btn">Buy WP Pusher</button>
-          <div class="help">
+            <div class="details">
+              <div class="det">
+                <img src="./Assets/Combined Shape Copy 2.png" />
+                <p>Use on <span>5</span> client sites</p>
+              </div>
+              <div class="det">
+                <img src="./Assets/Combined Shape Copy 2.png" />
+                <p>Private repositories</p>
+              </div>
+              <div class="det">
+                <img src="./Assets/Combined Shape Copy 2.png" />
+                <p>Email support</p>
+              </div>
+            </div>
+            <div class="switch">
+              <div class="switch-container">
+                <p>
+                  Need <span>20</span> client sites?<br />
+                  <span>Switch to the <em>Agency</em> plan.</span>
+                </p>
+                <hr />
+              </div>
+            </div>
             <div>
-              <span class="oval1">?</span>
+              <hr class="ff" />
+  
+              <div class="quote">
+                <p>
+                  FTP is horrible to deal with. <span>WP Pusher</span> solves that
+                  issue, and the customer support is awesome!
+                </p>
+  
+                <div class="img-container">
+                  <img src="./Assets/Bitmap.png" alt="bitmap image" />
+                  <p>Kirk Beard</p>
+                </div>
+              </div>
             </div>
-            <p>
-              <strong>Need any help?</strong> Don't hesitate to contact
-              <br />support!
-            </p>
           </div>
-          <img
-            src="./Assets/powered_by_stripe.png"
-            alt="stripe-button"
-            width="92px"
-            height="20.1px"
-          />
         </div>
       </div>
 
-      <!-- Right smaller box -->
-      <div class="right-box">
-        <!-- Additional content can go here -->
-        <p>Additional Box Content</p>
-      </div>
+      <footer>
+        <p>&copy; 2018 WP Pusher IVS · <a href="#terms">Terms of Service</a></p>
+      </footer>
     </div>
   </body>
 </html>
