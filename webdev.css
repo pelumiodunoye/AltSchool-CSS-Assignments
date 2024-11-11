@@ -186,7 +186,7 @@ span {
 }
 
 /* Mobile Styles */
-@media (min-width:320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   body {
     background-color: hsla(174, 62%, 47%, 0.04);
     margin: 0 24px 0;
@@ -355,8 +355,7 @@ span {
   }
 }
 
-@media (min-width:769px) {
-
+@media (min-width: 769px) {
   .hero-section h2 {
     font-family: "Brown", sans-serif;
     font-weight: 700;
@@ -376,7 +375,7 @@ span {
   footer {
     display: none;
   }
-  
+
   .hero-section p {
     font-family: "BrownHeavy", sans-serif;
     font-weight: 400;

@@ -118,24 +118,27 @@
 
 @media (max-width: 390px) {
     .header {
-        padding: 96px 0 0 24px;
+        padding: 48px 0 0 24px;
       }
     
       .p-text {
-        width: 342px;
+        width: 100%;
+        max-width: 342px;
+        font-size: 16px;
         letter-spacing: -0.5%;
       }
-    
+
       .span-text {
         letter-spacing: -0.5%;
       }
-    
+
       .main {
         padding: 72px 0;
       }
     
       .white-card {
         width: 100%;
+        max-width: 390px;
         height: auto;
       }
 
@@ -144,8 +147,9 @@
       }
 
       .content {
-        width: 342px;
-        margin: 0 24px;
+        width: 100%;
+        max-width: 342px;
+        font-size: 16px;
       }
     
       .content:last-child {
