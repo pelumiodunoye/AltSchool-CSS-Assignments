@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WP Pusher</title>
     <link rel="stylesheet" href="wppusher.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
     </style>
   </head>
   <body>
-    <header>
+    <header class="desktop-nav">
       <div class="logo">
         <img src="./Assets/wppusher-logo copy.png" alt="Logo" />
       </div>
@@ -24,7 +28,29 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!-- Top Navigation Menu -->
+    <div class="topnav mobile-nav">
+      <!-- <a href="#home" class="active">Logo</a> -->
+      <img src="./Assets/wppusher-logo copy.png" alt="Logo" />
+
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">Download</a>
+        <a href="#contact">Learn More</a>
+        <a href="#about">Pricing</a>
+        <a href="#about">Help</a>
+        <a href="#about">Account</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <hr />
+
     <div class="panel">
       <div class="main-content">
         <div class="checkout-info">
@@ -47,10 +73,14 @@
             </div>
             <div class="email">
               <label for="email">E-mail</label>
-              <input type="email" id="email" placeholder="janedoe@example.com" />
+              <input
+                type="email"
+                id="email"
+                placeholder="janedoe@example.com"
+              />
             </div>
           </div>
-  
+
           <hr class="header-line1" />
           <div class="payment-information">
             <div class="text-with-oval">
@@ -101,7 +131,7 @@
             />
           </div>
         </div>
-  
+
         <!-- Right smaller box -->
         <div class="sidebar">
           <div class="sidebar-content">
@@ -138,13 +168,13 @@
             </div>
             <div>
               <hr class="ff" />
-  
+
               <div class="quote">
                 <p>
-                  FTP is horrible to deal with. <span>WP Pusher</span> solves that
-                  issue, and the customer support is awesome!
+                  FTP is horrible to deal with. <span>WP Pusher</span> solves
+                  that issue, and the customer support is awesome!
                 </p>
-  
+
                 <div class="img-container">
                   <img src="./Assets/Bitmap.png" alt="bitmap image" />
                   <p>Kirk Beard</p>
@@ -154,10 +184,33 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- <footer class="foot-er">
+      <p>
+        &copy; 2018 WP Pusher IVS ·
+        <span class="footer-span">Terms of Service</span>
+      </p>
+    </footer> -->
 
+    <div class="foot">
       <footer>
-        <p>&copy; 2018 WP Pusher IVS · <a href="#terms">Terms of Service</a></p>
+        <p>
+          &copy; 2018 WP Pusher IVS ·
+          <span class="footer-span">Terms of Service</span>
+        </p>
       </footer>
     </div>
+
+    <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
