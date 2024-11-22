@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(../Assets/fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Semi-bold";
+  src: url(../Assets/fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url(../Assets/fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url(../Assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(../Assets/fonts/Gilroy-Light.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Thin";
+  src: url(../Assets/fonts/Gilroy-Thin.ttf);
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section {
+  width: 100vw;
+  height: 1024px;
+  background-image: url(../Assets/aurora.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 12px;
+  margin-bottom: 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 140px;
+  padding: 0;
+  /* width: 75%; */
+}
+
+.logo img {
+  width: 155px;
+  height: 40px;
+  padding: 0;
+}
+
+.nav-links nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy Medium", sans-serif;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+.nav-links nav ul li a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.nav-links nav ul li:first-child a {
+  color: #0065fe;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+}
+
+.features .vector {
+  width: 12px;
+  height: 6px;
+  margin-left: 8px;
+}
+
+.nav-cta ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-cta ul li a {
+  text-decoration: none;
+  color: #0065fe;
+  font-size: 16px;
+  line-height: 18.75px;
+  font-family: "Gilroy Semi-Bold", sans-serif;
+}
+
+.nav-button {
+  margin: 0;
+  padding: 12px 24px;
+  background-color: #0065fe;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 18.75px;
+  font-family: "Gilroy Semi-Bold", sans-serif;
+}
+
+.hero-text {
+  max-width: 948px;
+  height: 389px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  line-height: 72px;
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy Bold", sans-serif;
+}
+
+.hero-span {
+  color: #0065fe;
+  margin: 0;
+  padding: 0;
+}
+
+.vector3 {
+  margin-top: 0;
+  padding: 0;
+}
+
+.hero-text p {
+  max-width: 781px;
+  height: 105px;
+  text-align: center;
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
