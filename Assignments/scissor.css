@@ -816,7 +816,25 @@ header {
   margin: 0;
 }
 
+.faq-item-minus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 .question {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.question-minus {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -903,14 +921,116 @@ hr {
   padding: 12px 24px;
 }
 
-.FAQ {
+.footer-section {
   background-color: #ffffff;
   background-image: url(../Assets/Group\ 33.png), url(../Assets/Group\ 34.png);
+  height: fit-content;
+  /* height: 561px; */
   background-repeat: no-repeat, no-repeat; 
-  background-position: top left, bottom right; 
+  background-position: bottom left, bottom right; 
   background-size: auto, auto; 
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 95px 0 0;
+  margin: 0;
+  gap: 39px;
+}
+
+.logos  {
+  display: flex;
   flex-direction: column;
+  gap: 32px;
+  width: 184px;
+  height: 96px;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0;
+  margin: 0;
+}
+
+.black-logo  {
+  box-sizing: border-box;
+  width: 155px;
+}
+
+.icons  {
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
+  padding: 0 8px;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  gap: 56px;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  gap: 31px;
+  color: #071827;
+}
+
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0 24px;
+  box-sizing: border-box;
+  color: #071827;
+}
+
+.footer-text-header {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  color: #071827;
+}
+
+.footer-text-body p {
+  font-family: "Gilroy Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 4px;
+  padding: 0;
+  color: #071827;
+}
+
+.footer-text-body p:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-span {
+  font-family: "Gilroy Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #112232;
+  margin-top: 502px;
+  padding: 0 12px;
 }
